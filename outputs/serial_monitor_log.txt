@@ -1,0 +1,56 @@
+==========================================
+ SMART PARKING SYSTEM INITIALIZATION
+==========================================
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+load:0x40080400,len:2972
+entry 0x400805dc
+
+OLED Display initialized successfully.
+System Ready. All 4 slots available.
+
+[STAGE 1: ALL SLOTS FREE]
+S1: 101cm | S2: 101cm | S3: 101cm | S4: 101cm | Free: 4/4 | Gate: OPEN
+S1: 101cm | S2: 102cm | S3: 101cm | S4: 101cm | Free: 4/4 | Gate: OPEN
+S1: 101cm | S2: 101cm | S3: 101cm | S4: 101cm | Free: 4/4 | Gate: OPEN
+S1: 101cm | S2: 102cm | S3: 101cm | S4: 101cm | Free: 4/4 | Gate: OPEN
+
+[STAGE 2: VEHICLE ENTERS SLOT 1]
+S1:  59cm | S2: 101cm | S3: 101cm | S4: 101cm | Free: 4/4 | Gate: OPEN
+S1:  35cm | S2: 101cm | S3: 101cm | S4: 101cm | Free: 4/4 | Gate: OPEN
+S1:  17cm | S2: 101cm | S3: 101cm | S4: 101cm | Free: 3/4 | Gate: OPEN
+S1:  21cm | S2: 101cm | S3: 101cm | S4: 101cm | Free: 3/4 | Gate: OPEN
+S1:  20cm | S2: 101cm | S3: 101cm | S4: 101cm | Free: 3/4 | Gate: OPEN
+
+[STAGE 3: VEHICLE ENTERS SLOT 3]
+S1:  21cm | S2: 101cm | S3:  17cm | S4: 101cm | Free: 2/4 | Gate: OPEN
+S1:  20cm | S2: 101cm | S3:  16cm | S4: 101cm | Free: 2/4 | Gate: OPEN
+S1:  20cm | S2:  77cm | S3:  16cm | S4: 101cm | Free: 2/4 | Gate: OPEN
+S1:  21cm | S2:  77cm | S3:  16cm | S4: 101cm | Free: 2/4 | Gate: OPEN
+
+[STAGE 4: VEHICLE ENTERS SLOT 2]
+S1:  21cm | S2:   2cm | S3:  16cm | S4: 101cm | Free: 1/4 | Gate: OPEN
+S1:  21cm | S2:   7cm | S3:  16cm | S4: 101cm | Free: 1/4 | Gate: OPEN
+S1:  20cm | S2:   7cm | S3:  16cm | S4: 101cm | Free: 1/4 | Gate: OPEN
+
+[STAGE 5: VEHICLE ENTERS SLOT 4 - PARKING FULL LOCKOUT]
+S1:  20cm | S2:   7cm | S3:  16cm | S4:   4cm | Free: 0/4 | Gate: CLOSED (FULL)
+S1:  21cm | S2:   7cm | S3:  16cm | S4:   2cm | Free: 0/4 | Gate: CLOSED (FULL)
+S1:  20cm | S2:   7cm | S3:  16cm | S4:  16cm | Free: 0/4 | Gate: CLOSED (FULL)
+
+[STAGE 6: VEHICLE DEPARTS FROM SLOT 4 - RECOVERY]
+S1:  20cm | S2:   7cm | S3:  16cm | S4: 100cm | Free: 1/4 | Gate: OPEN
+S1:  21cm | S2:   7cm | S3:  16cm | S4: 173cm | Free: 1/4 | Gate: OPEN
+S1:  21cm | S2:   7cm | S3:  16cm | S4: 160cm | Free: 1/4 | Gate: OPEN
+
+[STAGE 7: VEHICLE RE-ENTERS SLOT 4 - SECOND FULL LOCKOUT]
+S1:  20cm | S2:   7cm | S3:  16cm | S4:  35cm | Free: 1/4 | Gate: OPEN
+S1:  21cm | S2:   7cm | S3:  16cm | S4:   2cm | Free: 0/4 | Gate: CLOSED (FULL)
+S1:  21cm | S2:   7cm | S3:  16cm | S4:  27cm | Free: 0/4 | Gate: CLOSED (FULL)
+S1:  20cm | S2:   7cm | S3:  16cm | S4:  14cm | Free: 0/4 | Gate: CLOSED (FULL)
+S1:  21cm | S2:   7cm | S3:  16cm | S4:   8cm | Free: 0/4 | Gate: CLOSED (FULL)
+S1:  20cm | S2:   7cm | S3:  16cm | S4:  34cm | Free: 0/4 | Gate: CLOSED (FULL)

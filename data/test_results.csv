@@ -1,0 +1,11 @@
+Test ID,Input / Condition,Expected Output,Actual Output,Result
+TC-01,Bright room + no motion,Light OFF,,"PENDING"
+TC-02,Dark room + motion,Light ON,,"PENDING"
+TC-03,Temperature >= 30 C,Fan ON,,"PENDING"
+TC-04,Temperature <= 28 C,Fan OFF,,"PENDING"
+TC-05,Security armed + motion,Red LED + buzzer + INTRUDER ALERT,,"PENDING"
+TC-06,Security armed + no motion,Alarm OFF,,"PENDING"
+TC-07,Light button,Manual light toggle,,"PENDING"
+TC-08,Fan button,Manual fan toggle,,"PENDING"
+TC-09,Long light-button press,Light AUTO mode,,"PENDING"
+TC-10,Long fan-button press,Fan AUTO mode,,"PENDING"

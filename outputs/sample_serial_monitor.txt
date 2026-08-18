@@ -1,0 +1,20 @@
+================================
+ SMART PARKING SYSTEM - ESP32
+================================
+OLED initialized.
+WiFi connected. IP: 192.168.4.2
+Web server started.
+System ready.
+
+==============================
+       SMART PARKING
+==============================
+Slot 1 | Distance: 10.0 cm | Status: OCCUPIED
+Slot 2 | Distance: 100.0 cm | Status: FREE
+Slot 3 | Distance: 20.0 cm | Status: OCCUPIED
+Slot 4 | Distance: 100.0 cm | Status: FREE
+------------------------------
+Occupied Slots: 2
+Available Slots: 2
+STATUS: SPACE AVAILABLE
+==============================

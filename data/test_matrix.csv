@@ -1,0 +1,7 @@
+Test ID,S1 cm,S2 cm,S3 cm,S4 cm,Expected Free,Expected State
+TC01,100,100,100,100,4,All free
+TC02,10,100,100,100,3,S1 occupied
+TC03,10,15,100,100,2,"S1,S2 occupied"
+TC04,10,15,20,100,1,"S1,S2,S3 occupied"
+TC05,10,15,20,12,0,Parking full
+TC06,10,100,20,12,1,Vehicle departure / recovery

@@ -1,0 +1,27 @@
+# Build artifacts
+build/
+.pio/
+.vscode/
+
+# Wokwi generated/cache files
+wokwi.log
+*.elf
+*.bin
+*.hex
+
+# Python/cache
+__pycache__/
+*.pyc
+
+# OS/editor
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+*.local
+
+# Keep empty project folders
+!src/.gitkeep
+!outputs/.gitkeep
+!screenshots/.gitkeep
